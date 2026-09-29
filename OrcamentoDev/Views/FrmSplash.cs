@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-namespace OrcamentoDev.Views
+﻿namespace OrcamentoDev.Views
 {
     public partial class FrmSplash : Form
     {
@@ -29,7 +21,7 @@ namespace OrcamentoDev.Views
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(prgCarregando.Value < 100)
+            if (prgCarregando.Value < 100)
             {
                 prgCarregando.Value += 5;
             }
@@ -40,6 +32,16 @@ namespace OrcamentoDev.Views
                 login.Show();
                 this.Hide();
             }
+
+        }
+
+        private void lblCarregando_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmSplash_Load(object sender, EventArgs e)
+        {
 
         }
     }
